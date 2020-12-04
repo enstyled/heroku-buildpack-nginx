@@ -142,7 +142,9 @@ To test the builds locally:
 
 ```
 $ make shell
-$ cp bin/nginx-$STACK bin/nginx
+$ tar zxvf nginx-$STACK.tgz
+$ mv nginx bin/
+$ mv mime.types config
 $ FORCE=1 bin/start-nginx
 ```
 
